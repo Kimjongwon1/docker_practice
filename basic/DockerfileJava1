@@ -5,9 +5,9 @@ FROM openjdk:11
 WORKDIR /app
 
 # HelloWorld1.java 파일을 컨테이너의 /app폴더로 복사
-COPY HelloWorld1.java /app
+COPY OrderingApplication.java /app
 
-RUN javac HelloWorld1.java
+RUN javac OrderingApplication.java
 
 # 실행
-CMD ["java", "HelloWorld1"]
+CMD ["java", "OrderingApplication"]
